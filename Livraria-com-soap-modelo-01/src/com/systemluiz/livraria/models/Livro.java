@@ -13,6 +13,7 @@ public class Livro {
 	Livro(){}
 	
 	public Livro(String nome, String editora, Integer anoDePublicacao, List<String> autores, String resumo){
+		super();
 		this.nome = nome;
 		this.editora = editora;
 		this.anoDePublicacao = anoDePublicacao;
