@@ -11,12 +11,8 @@ import com.systemluiz.livraria.models.Livro;
 @WebService
 public class ListagemLivros {
 	public List<Livro> listarLivros(){
-		LivroDAO livroDAO = obterDAO();
+		LivroDAO livroDAO = new LivroDAO();
 		return livroDAO.insereEmLivro();
-	}
-
-	private LivroDAO obterDAO() {	
-		return new LivroDAO();
 	}
 	
 	public static void main(String[] args) {
